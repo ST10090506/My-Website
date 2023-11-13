@@ -1,0 +1,191 @@
+/* styles.css */
+/* this defines the background styling for the body using radial gradient*/
+body {
+  background: radial-gradient(circle at 24.1% 68.8%,
+      rgb(50, 50, 50) 0%,
+      rgb(0, 0, 0) 99.4%);
+}
+
+/* indication for an image with a fixed width of 200px and auto height*/
+#my-image {
+  width: 200px;
+  height: auto;
+}
+
+/* this the style to make text color white for elements with the 'white-text' class*/
+.white-text {
+  color: white;
+}
+
+/*it sets the font family for the entire page*/
+body {
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*this establishes a clearfix class for containing floated elements*/
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+/*clear the floated elements within the 'cf' container*/
+.cf:after {
+  clear: both;
+}
+
+/*menu and submenu list formatting*/
+.menu,
+.submenu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*main menu design*/
+.menu {
+  margin: 50px auto;
+  width: 800px;
+  /*set a fixed width for desktop screens*/
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
+  /*responsive width based on content*/
+}
+
+/*Styling for each menu item*/
+.menu>li {
+  background: #000;
+  float: left;
+  position: relative;
+  transform: skewX(25deg);
+  transition: background 0.3s ease;
+}
+
+/*styling for menu item links*/
+.menu a {
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+}
+
+/*hover effect for the menu items*/
+.menu li:hover {
+  background: red;
+}
+
+/*adjust the skew and padding within each menu item link*/
+.menu>li>a {
+  transform: skewX(-25deg);
+  padding: 1em 2em;
+}
+
+/*media query for screens with a max-width of 960px (mobile devices)*/
+@media screen and (max-width: 960px) {
+  .menu {
+    /*fix menu width for mobile screens*/
+    width: 100%;
+  }
+
+  .menu>li {
+    /*remove skew and reset float for menu items on mobile screens*/
+    transform: none;
+    float: none;
+  }
+
+  .menu>li>a {
+    /*fix padding for mobile menu items*/
+    transform: none;
+    padding: 1em;
+  }
+}
+
+label {
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-size: 20px;
+}
+
+/* Add these styles to make the countdown timer white */
+.countdown-timer {
+  color: white;
+  font-size: 24px;
+  /* Adjust the font size as needed */
+  font-family: Arial, sans-serif;
+  /* Choose a suitable font-family */
+  text-align: center;
+  margin-top: 20px;
+  /* Adjust the margin as needed */
+}
+
+#image-slideshow img {
+  width: 500px;
+  /* Adjust the width as needed */
+  height: auto;
+  /* Maintain the aspect ratio */
+  display: none;
+  /* Hide all images by default */
+}
+
+#description {
+  /*style for the description above the countdown*/
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  color: red;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+#scrollToTopBtn {
+  /*style for scroll to the top button*/
+  display: none;
+  bottom: 20px;
+  right: 20px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#scrolToTopBtn:hover {
+  background-color: #265982
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: red;
+  color: #ffffff;
+  border: #000;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: red;
+}
+
+#social-media-logos img{
+  width: 30px;
+  height:auto;
+  margin-right: 10px;
+}
